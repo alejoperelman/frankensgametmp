@@ -1,0 +1,136 @@
+:root {
+    --primary-bg: #f8f0e3; /* Tono crema sepia claro */
+    --secondary-bg: #e0d0b0; /* Tono sepia un poco más oscuro */
+    --text-color: #333; /* Gris oscuro para el texto principal */
+    --accent-color: #a0522d; /* Sienna, un marrón rojizo para acentos */
+    --border-color: #5a4b3f; /* Marrón oscuro para bordes */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --font-heading: 'Creepster', cursive; /* Fuente "monstruosa" para títulos */
+    --font-body: 'Merriweather', serif; /* Fuente elegante y legible para cuerpo */
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea al inicio para que el contenido fluya */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--secondary-bg);
+    border: 3px solid var(--border-color);
+    box-shadow: 10px 10px 0 var(--shadow-color);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espacio para el footer si el contenido es corto */
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px var(--shadow-color);
+}
+
+.frankenstein-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 var(--shadow-color);
+    margin-bottom: 30px;
+}
+
+.countdown-section h2 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--shadow-color);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.countdown-item {
+    background-color: var(--primary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px 20px;
+    min-width: 80px;
+    box-shadow: 3px 3px 0 var(--shadow-color);
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.countdown-item small {
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.event-message {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    color: #4CAF50; /* Un verde vibrante para el mensaje */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border-color);
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    .countdown-section h2 {
+        font-size: 1.5em;
+    }
+    .countdown {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .countdown-item {
+        min-width: 60px;
+        padding: 10px 15px;
+    }
+    .countdown-item span {
+        font-size: 1.8em;
+    }
+}
+
+/* Estilos para el contenedor de anuncios */
+.ad-container {
+    margin: 40px auto; /* Centra el contenedor y le da espacio arriba y abajo */
+    max-width: 728px; /* O un ancho máximo adecuado para tus anuncios */
+    background-color: var(--primary-bg);
+    border: 1px dashed var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+}
